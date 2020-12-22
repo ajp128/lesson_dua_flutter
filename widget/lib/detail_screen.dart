@@ -47,20 +47,45 @@ class _DetailScreenState extends State<DetailScreen> {
                       border: TableBorder.all(),
                       children: [
                         TableRow(children: [
-                          Column(children: [Text('Name')]),
-                          Column(children: [Text('Kyojuro Rengoku')])
+                          Column(children: [
+                            Text('Name',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold)),
+                          ]),
+                          Column(children: [
+                            Text('Kyojuro Rengoku',
+                                style: TextStyle(fontSize: 20))
+                          ])
                         ]),
                         TableRow(children: [
-                          Column(children: [Text('Kanji')]),
-                          Column(children: [Text('煉獄 杏寿郎')])
+                          Column(children: [
+                            Text('Kanji',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold))
+                          ]),
+                          Column(children: [
+                            Text('煉獄 杏寿郎', style: TextStyle(fontSize: 20))
+                          ])
                         ]),
                         TableRow(children: [
-                          Column(children: [Text('Birth of Date')]),
-                          Column(children: [Text('May 10th')])
+                          Column(children: [
+                            Text('Birth of Date',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold))
+                          ]),
+                          Column(children: [
+                            Text('May 10th', style: TextStyle(fontSize: 20))
+                          ])
                         ]),
                         TableRow(children: [
-                          Column(children: [Text('Gender')]),
-                          Column(children: [Text('Male')])
+                          Column(children: [
+                            Text('Gender',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold))
+                          ]),
+                          Column(children: [
+                            Text('Male', style: TextStyle(fontSize: 20))
+                          ])
                         ]),
                       ],
                     ),
