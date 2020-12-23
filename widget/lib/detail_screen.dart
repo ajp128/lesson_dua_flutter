@@ -23,11 +23,11 @@ class _DetailScreenState extends State<DetailScreen> {
               Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
-                    border: Border.all(color: Colors.black38),
+                    border: Border.all(color: Colors.orange[900], width: 5),
                     boxShadow: [
                       BoxShadow(
-                          color: Colors.black26,
-                          blurRadius: 10,
+                          color: Colors.orange[700],
+                          blurRadius: 20,
                           spreadRadius: 2)
                     ],
                     borderRadius: BorderRadius.all(Radius.circular(5))),
@@ -43,52 +43,35 @@ class _DetailScreenState extends State<DetailScreen> {
                       height: 400,
                       fit: BoxFit.cover,
                     ),
-                    Table(
-                      border: TableBorder.all(),
-                      children: [
-                        TableRow(children: [
-                          Column(children: [
-                            Text('Name',
-                                style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold)),
-                          ]),
-                          Column(children: [
-                            Text('Kyojuro Rengoku',
-                                style: TextStyle(fontSize: 20))
-                          ])
-                        ]),
-                        TableRow(children: [
-                          Column(children: [
-                            Text('Kanji',
-                                style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold))
-                          ]),
-                          Column(children: [
-                            Text('煉獄 杏寿郎', style: TextStyle(fontSize: 20))
-                          ])
-                        ]),
-                        TableRow(children: [
-                          Column(children: [
-                            Text('Birth of Date',
-                                style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold))
-                          ]),
-                          Column(children: [
-                            Text('May 10th', style: TextStyle(fontSize: 20))
-                          ])
-                        ]),
-                        TableRow(children: [
-                          Column(children: [
-                            Text('Gender',
-                                style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold))
-                          ]),
-                          Column(children: [
-                            Text('Male', style: TextStyle(fontSize: 20))
-                          ])
-                        ]),
-                      ],
-                    ),
+                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Name',
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                          Text('Kanji',
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                          Text('Gender',
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                          Text('Date of Birth',
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(': Kyojuro Rengoku',
+                              style: TextStyle(fontSize: 20)),
+                          Text(': 煉獄 杏寿郎', style: TextStyle(fontSize: 20)),
+                          Text(': Male', style: TextStyle(fontSize: 20)),
+                          Text(': 10th May', style: TextStyle(fontSize: 20)),
+                        ],
+                      )
+                    ]),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
