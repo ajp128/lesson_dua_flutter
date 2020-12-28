@@ -44,18 +44,39 @@ class HomeScreen extends StatelessWidget {
                 Icon(Icons.directions),
               ],
             ),
-            RaisedButton(
-              onPressed: () {
-                //pindah page
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => DetailScreen()));
-              },
-              child: Text(
-                'Tombol raised',
-                style: TextStyle(color: Colors.white),
-              ),
-              color: Colors.green,
-            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                RaisedButton(
+                  onPressed: () {
+                    //pindah page
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => DetailScreen()));
+                  },
+                  child: Text(
+                    'Tugas Lesson 2',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  color: Colors.green,
+                ),
+                RaisedButton(
+                  onPressed: () {
+                    //pindah page
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => DetailScreen()));
+                  },
+                  child: Text(
+                    'Tugas Lesson 3',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  color: Colors.green,
+                ),
+              ],
+            )
           ],
         ));
   }

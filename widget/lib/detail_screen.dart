@@ -23,12 +23,13 @@ class _DetailScreenState extends State<DetailScreen> {
               Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
-                    border: Border.all(color: Colors.orange[900], width: 5),
+                    border: Border.all(
+                        color: Colors.deepOrangeAccent[700], width: 5),
                     boxShadow: [
                       BoxShadow(
-                          color: Colors.orange[700],
-                          blurRadius: 20,
-                          spreadRadius: 2)
+                          color: Colors.deepOrange[800],
+                          blurRadius: 50,
+                          spreadRadius: 8)
                     ],
                     borderRadius: BorderRadius.all(Radius.circular(5))),
                 width: 500,
